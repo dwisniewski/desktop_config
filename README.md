@@ -5,7 +5,7 @@ Configuration of i3wm and others
 # Requirements:
 sudo pacman -S [...]
 - i3 (should provide: i3-wm, dunst (dmenu notification), i3lock (lock screen), i3status (status line), suckless-tools (simple commands for minimalistic wm))
-- compton - provides desktop effects
+- picom - provides desktop effects
 - hsetroot - provides wallpaper handling
 - rxvt-unicode - terminal emulator
 - xsel - X clipboard in terminal (alt+c to copy / alt+v to paste)
@@ -19,3 +19,12 @@ sudo pacman -S [...]
 
 
 `i3config` should be placed in `~/.config/i3/config`
+
+
+# picom configuration
+once installed, make sure that NVidia drivers are also installed (inxi -G -- check drivers, sudo mhwd -a pci nonfree 0300 -- install drivers)
+`mkdir ~/.config/picom`
+`cp /etc/xdg/picom.conf ~/.config/picom/`
+
+Autorun picom from i3:
+Add `exec picom &` to `~/.config/i3/config`
