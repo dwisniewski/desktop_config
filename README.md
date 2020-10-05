@@ -28,3 +28,7 @@ once installed, make sure that NVidia drivers are also installed (inxi -G -- che
 
 Autorun picom from i3:
 Add `exec picom &` to `~/.config/i3/config`
+
+# Urxvt configuration
+Copy `config/dotXresources` to `~/.Xresources` to set terminal fonts and colors
+Copy `config/dotXdefaults` to `~/.Xdefaults` to set terminal opacity
