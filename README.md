@@ -32,3 +32,6 @@ Add `exec picom &` to `~/.config/i3/config`
 # Urxvt configuration
 Copy `config/dotXresources` to `~/.Xresources` to set terminal fonts and colors
 Copy `config/dotXdefaults` to `~/.Xdefaults` to set terminal opacity
+
+# i3 status bar
+Copy `config/i3statusconfig` to `~/.config/i3status/config` to set how status bar should look like.
